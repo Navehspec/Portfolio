@@ -1,0 +1,13 @@
+{
+  "name": "Anechoic Chamber",
+  "short": "Desinged and built an in-house anechoic chamber to test 80Ghz radar",
+  "description": "Due to the inaccessibility and price of professional Anechoic rooms, I designed and build a small scale (2x1x1m) chamber to perform bring up, tests and capability gauging chamber with a programmable 2 axis rotator for mm-wave radars.",
+  "photos": [
+    "photo_1",
+    "photo_2",
+    "photo_3",
+    "photo_4",
+    "photo_5",
+    "photo_6"
+  ]
+}

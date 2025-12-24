@@ -1,0 +1,12 @@
+{
+  "name": "Folder name (project title)",
+  "short": "Short visible description for the card (1–2 sentences).",
+  "description": "More detailed description shown when the item is opened.",
+  "photos": [
+    "photo_1.jpg",
+    "photo_2.jpg"
+  ],
+  "videos": [
+    "optional_video_1.mp4"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Military Surveillance System",
+  "short": "Developed and implemented a full control, communcation and recognition framework for a military grade PTZ dual channel camera",
+  "description": "Converted a decomissioned dual sensor PTZ camera to a fully functional system by reverse engineering the internal system and building a complete framwork around it. Designed and developed the control dashboard, power solution, 3 working communcation solutions (4g, Long Range high power directional wifi, and tethered), and implemented AI target recognition. Developed the system to run on a NVIDIA Jetson Platform to allow edge computing and minimal equipment requirement to run the system.",
+  "photos": [
+    "photo_1.jpg",
+    "photo_2.jpg",
+    "photo_3.jpg"
+  ],
+  "videos": [
+    "video_1.mp4"
+  ]
+}

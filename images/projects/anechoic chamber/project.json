@@ -1,0 +1,11 @@
+{
+  "name": "Anechoic Chamber",
+  "short": "Designing and fitting an RF chamber for sensor bring-up and validation.",
+  "description": "RF-grade foam layout, rotating mounts, and measurement fixtures for multi-sensor experimentation inside an anechoic chamber.",
+  "photos": [
+    "photo_2025-12-10_10-21-44.jpg",
+    "photo_1_2025-12-10_10-22-54.jpg",
+    "photo_5_2025-12-10_10-22-54.jpg",
+    "photo_11_2025-12-10_10-22-54.jpg"
+  ]
+}
