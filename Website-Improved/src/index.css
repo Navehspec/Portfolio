@@ -472,27 +472,82 @@ h1, h2, h3 {
 
 /* Media Queries */
 @media (max-width: 768px) {
+  /* Compact Floating Avatar */
   .floating-avatar {
-    left: 20px;
-    top: 12px;
-    width: 60px;
-    height: 60px;
+    left: 16px;
+    top: 10px;
+    width: 48px;
+    height: 48px;
+    border-width: 1px;
+  }
+  
+  /* Compact Header Layout */
+  .site-header {
+    padding: 8px 0;
+  }
+  
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding-left: 56px; /* Space for the avatar */
+  }
+
+  .header-brand {
+    width: 100%;
+  }
+
+  .header-identity {
+    line-height: 1.1;
+  }
+  
+  .header-name {
+    font-size: 0.95rem;
+  }
+  
+  .header-role {
+    font-size: 0.75rem;
+  }
+  
+  /* Compact Nav/Contact Info */
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+    margin-top: 2px;
+  }
+  
+  .header-info-item {
+    font-size: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Compact Hero */
+  .hero {
+    padding: 20px 0 16px;
   }
   
   .hero h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    margin: 8px 0;
+  }
+  
+  .hero .lede {
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
   
   .general-rail-container {
     height: 180px;
   }
-  
-  .header-info-item {
-    font-size: 0.8rem;
-  }
 
   .wrap {
-    width: 90vw;
+    width: 92vw;
   }
 }
 
