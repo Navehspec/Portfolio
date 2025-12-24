@@ -1,9 +1,20 @@
 import React from 'react';
 
 const ProjectCard = ({ project, onClick }) => {
+  const base = import.meta.env.BASE_URL;
+  // Remove trailing slash from base if present to avoid double slashes, 
+  // though Vite usually handles this. keeping it simple:
+  // BASE_URL usually ends with / if set to /Portfolio/
+  
+  // Clean logic:
+  // If base is '/', path is /images/...
+  // If base is '/Portfolio/', path is /Portfolio/images/...
+  
+  const resolvePath = (path) => `${base}${path}`.replace('//', '/');
+
   const cover = project.slug && Array.isArray(project.photos) && project.photos.length 
-    ? `/images/projects/${project.slug}/${project.photos[0]}` 
-    : (project.slug && project.image ? `/images/projects/${project.slug}/${project.image}` : project.image);
+    ? resolvePath(`images/projects/${project.slug}/${project.photos[0]}`)
+    : (project.slug && project.image ? resolvePath(`images/projects/${project.slug}/${project.image}`) : project.image);
 
   return (
     <article className="project-card" onClick={() => onClick(project)}>

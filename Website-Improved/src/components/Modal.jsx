@@ -5,14 +5,17 @@ const Modal = ({ project, onClose }) => {
   const [mediaIndex, setMediaIndex] = useState(0);
 
   useEffect(() => {
+    const base = import.meta.env.BASE_URL;
+    const resolvePath = (path) => `${base}${path}`.replace('//', '/');
+
     const images = Array.isArray(project.photos) ? project.photos.filter(Boolean) : [];
     const videos = Array.isArray(project.videos) ? project.videos.filter(Boolean) : [];
     let media = [
-      ...images.map((src) => ({ type: 'image', src: `/images/projects/${project.slug}/${src}` })),
-      ...videos.map((src) => ({ type: 'video', src: `/images/projects/${project.slug}/${src}` }))
+      ...images.map((src) => ({ type: 'image', src: resolvePath(`images/projects/${project.slug}/${src}`) })),
+      ...videos.map((src) => ({ type: 'video', src: resolvePath(`images/projects/${project.slug}/${src}`) }))
     ];
     if (!media.length && project.image) {
-      media = [{ type: 'image', src: `/images/projects/${project.slug}/${project.image}` }];
+      media = [{ type: 'image', src: resolvePath(`images/projects/${project.slug}/${project.image}`) }];
     }
     setActiveMedia(media);
     setMediaIndex(0);
